@@ -1,17 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush_utils.h                                       :+:      :+:    :+:   */
+/*   rush_header.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lde-medi <lde-medi@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 03:17:18 by lde-medi          #+#    #+#             */
-/*   Updated: 2024/11/16 03:27:36 by lde-medi         ###   ########.fr       */
+/*   Updated: 2024/11/16 03:51:41 by lde-medi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RUSH_UTILS_H
-# define RUSH_UTILS_H
+#ifndef RUSH_HEADER_H
+# define RUSH_HEADER_H
+
+void	ft_putstr(char	*str);
+int		is_char_digit(char c);
+int		is_even_number(int n);
+int		is_valid_input(int argc, char	*input);
 
 typedef struct s_towers_visibility
 {
