@@ -6,7 +6,7 @@
 /*   By: lde-medi <lde-medi@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 04:24:29 by lde-medi          #+#    #+#             */
-/*   Updated: 2024/11/17 06:17:13 by lde-medi         ###   ########.fr       */
+/*   Updated: 2024/11/17 06:27:09 by lde-medi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -295,6 +295,8 @@ int	find_solution(int grid[4][4], t_views views, int row, int column)
 		if (!is_number_repeated(grid, row, column, number))
 		{
 			grid[row][column] = number;
+			next_row = row;
+			next_column = column;
 			set_next_position(&next_row, &next_column);
 			if (find_solution(grid, views, next_row, next_column))
 				return (1);
